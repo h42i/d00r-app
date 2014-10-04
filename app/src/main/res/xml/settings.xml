@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+        <CheckBoxPreference
+            	android:defaultValue="@string/pref_default_vibration"
+                android:title="@string/pref_vibration"
+                android:summary="@string/pref_vibration_summary"
+                android:key="@string/pref_key_vibration"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_server" >
+        <EditTextPreference
+            	android:defaultValue="@string/pref_default_downstairs_server_address"
+                android:title="@string/pref_downstairs_server_address"
+                android:summary="@string/pref_downstairs_server_address_summary"
+                android:key="@string/pref_key_downstairs_server_address"/>
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_upstairs_server_address"
+            android:title="@string/pref_upstairs_server_address"
+            android:summary="@string/pref_upstairs_server_address_summary"
+            android:key="@string/pref_key_upstairs_server_address"/>
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

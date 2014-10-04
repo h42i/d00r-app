@@ -1,0 +1,37 @@
+apply plugin: 'android'
+
+android {
+    buildToolsVersion "20.0.0"
+    compileSdkVersion 19
+
+    defaultConfig {
+        applicationId "com.hasi.hasid00r"
+        minSdkVersion 11
+        targetSdkVersion 19
+    }
+
+    /*signingConfigs {
+        releaseSigning {
+            storeFile file("/home/daniel/play_store_keys/private_key")
+            storePassword System.console().readLine("\nStore password: ")
+            keyAlias "play_store_key"
+            keyPassword System.console().readLine("Key password: ")
+        }
+    }*/
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            debuggable false
+            //signingConfig signingConfigs.releaseSigning
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:20.0.0'
+    compile files('libs/bcpg-jdk15on-149.jar')
+    compile files('libs/bcprov-jdk15on-149.jar')
+    compile files('libs/jsch-0.1.50.jar')
+}

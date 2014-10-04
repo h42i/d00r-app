@@ -1,0 +1,74 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="5"
+    android:columnCount="1"
+    android:stretchColumns="*"
+    android:paddingBottom="@dimen/normal_activity_vertical_margin"
+    android:paddingLeft="@dimen/normal_activity_horizontal_margin"
+    android:paddingRight="@dimen/normal_activity_horizontal_margin"
+    android:paddingTop="@dimen/normal_activity_vertical_margin"
+    tools:context=".NewIdentity" >
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/your_name"
+	        style="?android:attr/listSeparatorTextViewStyle" />
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+	    <EditText
+	        android:id="@+id/edittext_your_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/put_your_name_in_here"
+	        android:inputType="text" />
+
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cryptographic_Strength"
+	        style="?android:attr/listSeparatorTextViewStyle" />
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+        <Spinner
+            android:id="@+id/spinner_key_strength_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/key_strength_levels" />
+
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+        <Button
+            android:id="@+id/button_generate_identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="generateNewIdentity"
+            android:text="@string/generate_new_identity" />
+
+    </TableRow>
+
+</TableLayout>

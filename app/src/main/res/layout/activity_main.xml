@@ -1,0 +1,44 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="1"
+    android:stretchColumns="*"
+    android:paddingBottom="@dimen/main_activity_vertical_margin"
+    android:paddingLeft="@dimen/main_activity_horizontal_margin"
+    android:paddingRight="@dimen/main_activity_horizontal_margin"
+    android:paddingTop="@dimen/main_activity_vertical_margin"
+    tools:context=".MainActivity">
+    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        
+        <Button
+            android:id="@+id/button_open_downstairs"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="24sp"
+            android:onClick="openDownstairs"
+            android:text="@string/open_downstairs" />
+
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"> 
+        
+        <Button
+            android:id="@+id/button_open_upstairs"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="24sp"
+            android:onClick="openUpstairs"
+            android:text="@string/open_upstairs" />
+
+    </TableRow>
+
+</TableLayout>

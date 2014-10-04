@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">D00R</string>
+    <string name="action_generate_new_identity">Generate new identity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="open_upstairs">Open upstairs</string>
+    <string name="open_downstairs">Open downstairs</string>
+    <string name="requested_identity_registration">Requested registration of your identity. You have to get unlocked now to actually be able to open the door upstairs!</string>
+    <string name="successfully_generated_new_identity">Successfully generated new identity! Do you want to register it now?</string>
+    <string name="no_identity_create_one">You don\'t have generated an identity yet. An identity is needed to get registered in order that you can open the door upstairs.</string>
+    <string name="failed_to_request_identity_registration_connection">Failed to request identity registration. Perhaps you are\'nt connected to the correct network.</string>
+    <string name="failed_to_request_identity_registration_no_identity">Failed to request identity registration. You have to generate an identity before you can register it..</string>
+    <string name="failed_to_open_door_connection">Failed to open door. Perhaps you are\'nt connected to the correct network.</string>
+    <string name="failed_to_open_door_identity_not_registered">Failed to open door. Either you did\'nt register your identity or you haven\'t become unlocked yet.</string>
+    <string name="failed_to_open_door_no_identity">Failed to open door. You have to generate an identity and register it before you can open the door upstairs.</string>
+    <string name="unknown_error">Unknown error.</string>
+    
+    <string name="title_activity_new_identity">New identity</string>
+    <string name="your_name">Your name:</string>
+    <string name="put_your_name_in_here">Put your name in here</string>
+    <string name="cryptographic_Strength">Cryptographic strength:</string>
+    
+    <string-array name="key_strength_levels">
+        <item>Weak (1024 bit)</item>
+        <item>Strong (2048 bit)</item>
+		<item>Very strong (4096 bit)</item>
+    </string-array>
+    
+    <string name="generate_new_identity">Generate identity</string>
+    
+    <string name="are_you_sure">Are you sure you want to create a new identity? This operation will delete the old one!</string>
+    <string name="generating_new_identity">Generating a new identity. This may take a while, be patient.</string>
+    <string name="failed_to_generate_new_identity">Failed to generate new identity.</string>
+    
+    <!-- preferences -->
+    <string name="title_activity_settings">Settings</string>
+    
+    <string name="pref_user_profile">User profile</string>
+    
+    <string name="pref_upstairs_open_time">Upstairs open time</string>
+    <string name="pref_upstairs_open_time_summary">Time to keep the door upstairs open in seconds (max 20)</string>
+    <string name="pref_key_upstairs_open_time">prefUpstairsOpenTime</string>
+    <string name="pref_default_upstairs_open_time">3</string>
+    <string name="pref_invalid_value_upstairs_open_time">Invalid value!</string>
+    
+    <string name="pref_downstairs_open_time">Downstairs open time</string>
+    <string name="pref_downstairs_open_time_summary">Time to keep the door downstairs open in seconds (max 20)</string>
+    <string name="pref_key_downstairs_open_time">prefDownstairsOpenTime</string>
+    <string name="pref_default_downstairs_open_time">3</string>
+    <string name="pref_invalid_value_downstairs_open_time">Invalid value!</string>
+
+    <string name="pref_vibration">Vibration</string>
+    <string name="pref_vibration_summary">Defines wether the device vibrates to indicate a door is open or not</string>
+    <string name="pref_key_vibration">prefVibration</string>
+    <string name="pref_default_vibration">true</string>
+    
+    <string name="pref_server">Server</string>
+    
+    <string name="pref_downstairs_server_address">Downstairs server address</string>
+    <string name="pref_downstairs_server_address_summary">Server to open the door downstairs</string>
+    <string name="pref_key_downstairs_server_address">prefDownstairsServerAddress</string>
+    <string name="pref_default_downstairs_server_address">atlas.hasi</string>
+    <string name="pref_resetted_to_default_downstairs_server_address">Invalid value! Resetted to default.</string>
+
+    <string name="pref_upstairs_server_address">Upstairs server address</string>
+    <string name="pref_upstairs_server_address_summary">Server to open the door upstairs</string>
+    <string name="pref_key_upstairs_server_address">prefUpstairsServerAddress</string>
+    <string name="pref_default_upstairs_server_address">pinkiepi.hasi</string>
+    <string name="pref_resetted_to_default_upstairs_server_address">Invalid value! Resetted to default.</string>
+
+</resources>
