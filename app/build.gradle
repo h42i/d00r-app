@@ -31,7 +31,7 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
-    compile files('libs/bcpg-jdk15on-149.jar')
-    compile files('libs/bcprov-jdk15on-149.jar')
-    compile files('libs/jsch-0.1.50.jar')
+    compile group: 'org.bouncycastle', name: 'bcpg-jdk15on', version: '1.49'
+    compile group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.49'
+    compile group: 'com.jcraft', name: 'jsch', version: '0.1.50'
 }
