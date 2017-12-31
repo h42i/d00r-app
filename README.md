@@ -1,7 +1,7 @@
-d00r-app
-========
+D00R
+====
 
-The door app.
+This app lets you open the door of the Hackspace Siegen, if your SSH-Key is registered.
 
 <p align="left">
 <a href="https://play.google.com/store/apps/details?id=com.hasi.hasid00r">
